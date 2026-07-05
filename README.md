@@ -1,45 +1,84 @@
 # 🛡️ OrionOps – Multi-Agent AI Security Operations Center (SOC)
 
-> An AI-powered Security Operations Center (SOC) platform that performs automated incident investigation using a multi-agent architecture, generates threat intelligence, risk assessments, response recommendations, and comprehensive incident reports.
-
----
-## Google AI Agents Capstone Project
-
-This project was developed as part of Google's **5-Day AI Agents: Intensive Vibe Coding Course** Capstone Project, demonstrating a multi-agent cybersecurity investigation workflow with a modern SOC dashboard.
-
-## 🚀 Demo
-
-🎥 **Demo Video**
-> https://youtu.be/7CZQ2ha5Ntk
-
-📂 **GitHub Repository**
-> https://github.com/aliasyeda/OrionOps-Multi-Agent-AI-Security-Operations-Center
+> AI-powered Security Operations Center that automates cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using a multi-agent architecture.
 
 ---
 
-# Overview
+## 🚀 Project Overview
 
-OrionOps is a cybersecurity incident investigation platform designed to simulate how a modern SOC can automate security investigations using multiple AI agents.
+OrionOps is a multi-agent cybersecurity platform built for Security Operations Centers (SOC). It helps security analysts investigate incidents faster by coordinating multiple AI agents that analyze alerts, assess risks, generate timelines, recommend response actions, and produce downloadable incident reports.
 
-The system analyzes security incidents, coordinates specialized agents, enriches threat intelligence, evaluates risk, generates mitigation recommendations, builds investigation timelines, and produces downloadable incident reports.
-
-The project demonstrates how multiple specialized AI agents can collaborate to automate enterprise security workflows.
+This project was developed for the **Google AI Agents: Intensive Vibe Coding Capstone Project (Kaggle)**.
 
 ---
 
-# Key Features
+# 🏗️ Architecture
+
+```text
+                ┌──────────────────────┐
+                │      User / SOC      │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                OrionOps Frontend Dashboard
+                           │
+                           ▼
+                  Investigation Manager
+                           │
+      ┌──────────┬─────────┼──────────┬──────────┐
+      ▼          ▼         ▼          ▼          ▼
+ Intake     Threat Intel   Timeline   Risk    Response
+ Agent         Agent        Agent     Agent    Agent
+      └──────────┬─────────┼──────────┬──────────┘
+                 ▼
+          Report Generation Agent
+                 │
+                 ▼
+         PDF Incident Report
+```
+
+---
+
+# 🔄 Investigation Workflow
+
+```text
+Incident Alert
+      │
+      ▼
+Incident Intake
+      │
+      ▼
+Threat Investigation
+      │
+      ▼
+Timeline Reconstruction
+      │
+      ▼
+Risk Assessment
+      │
+      ▼
+Recommendations
+      │
+      ▼
+Response Plan
+      │
+      ▼
+Executive Report (PDF)
+```
+
+---
+
+# ✨ Features
 
 ✅ Multi-Agent Investigation Workflow
 
-✅ Interactive SOC Dashboard
+✅ Cyber Incident Analysis
 
-✅ Incident Intake
-
-✅ Threat Intelligence Enrichment
+✅ Threat Intelligence Summary
 
 ✅ MITRE ATT&CK Mapping
 
-✅ Risk Assessment Dashboard
+✅ Dynamic Risk Assessment
 
 ✅ Investigation Timeline
 
@@ -47,68 +86,45 @@ The project demonstrates how multiple specialized AI agents can collaborate to a
 
 ✅ Incident Response Planning
 
-✅ PDF Report Generation
+✅ Executive PDF Report Generation
 
-✅ SQLite Memory Support
-
----
-
-# Multi-Agent Architecture
-
-The investigation pipeline consists of specialized agents:
-
-1. Manager Agent
-   - Coordinates the complete investigation workflow.
-
-2. Intake Agent
-   - Parses and structures incoming security incidents.
-
-3. Threat Intelligence Agent
-   - Enriches indicators of compromise (IOCs).
-
-4. Investigation Agent
-   - Correlates evidence and identifies attack activity.
-
-5. Risk Assessment Agent
-   - Calculates overall incident risk.
-
-6. Timeline Agent
-   - Builds chronological investigation events.
-
-7. Recommendation Agent
-   - Suggests containment and remediation actions.
-
-8. Response Agent
-   - Generates incident response plans.
-
-9. Report Agent
-   - Produces the final investigation report.
+✅ Interactive Security Dashboard
 
 ---
 
-# Memory Architecture
+# 🤖 AI Agents
 
-OrionOps includes a SQLite-backed memory layer for maintaining investigation context.
-
-Memory Components:
-
-- SQLite Database
-- Incident Storage
-- Investigation Context
-- Agent State Management
-- Workflow Tracking
-
-Benefits:
-
-- Persistent investigation history
-- Structured incident records
-- Context sharing between workflow stages
-- Local lightweight storage
-- Easy deployment without external databases
+| Agent | Responsibility |
+|--------|----------------|
+| Intake Agent | Receives and validates incident details |
+| Investigation Agent | Coordinates investigation workflow |
+| Threat Intelligence Agent | Identifies IOCs and threat context |
+| Timeline Agent | Reconstructs attack timeline |
+| Risk Assessment Agent | Calculates business and technical risk |
+| Recommendation Agent | Suggests remediation actions |
+| Response Agent | Creates containment and recovery plan |
+| Report Agent | Generates executive PDF report |
 
 ---
 
-# Tech Stack
+# 🧠 Memory Layer
+
+OrionOps includes a lightweight persistent memory layer using **SQLite**.
+
+The memory layer stores:
+
+- Investigation context
+- Case metadata
+- Agent state
+- Historical investigations
+- Conversation context
+- Workflow progress
+
+SQLite was selected because it is lightweight, portable, and suitable for local demonstrations without requiring an external database server.
+
+---
+
+# 🛠 Tech Stack
 
 ## Frontend
 
@@ -121,161 +137,129 @@ Benefits:
 - Python
 - FastAPI
 - SQLite
+- Modular Multi-Agent Architecture
 
-## Security
+## Reports
 
-- MITRE ATT&CK Mapping
-- IOC Processing
-- Risk Scoring
-- Threat Intelligence Simulation
-
-## Reporting
-
-- PDF Report Generation
+- PDF Generation
 
 ---
 
-# Project Structure
+# 📂 Project Structure
 
-```
-OrionOps Frontend/
-    React + TypeScript Dashboard
-
-OrionOps Backend/
-    Multi-Agent Backend
-    Memory
-    Tools
-    Agents
-    SQLite Database
-
-Demo Backend/
-    Simulation Backend
-    Demo Investigation Pipeline
+```text
+OrionOps/
+│
+├── orionops-frontend/
+│      React + TypeScript UI
+│
+├── OrionOps Backend/
+│      AI Agents
+│      Tools
+│      Memory
+│      SQLite Database
+│
+├── Demo Backend/
+│      Demonstration backend
+│      Scenario simulator
+│
+└── README.md
 ```
 
 ---
 
-# Workflow
+# 📊 Dashboard
 
-Incident Submitted
+The OrionOps dashboard provides:
 
-↓
-
-Manager Agent
-
-↓
-
-Intake Agent
-
-↓
-
-Threat Intelligence
-
-↓
-
-Investigation
-
-↓
-
-Risk Assessment
-
-↓
-
-Timeline Generation
-
-↓
-
-Recommendations
-
-↓
-
-Incident Response
-
-↓
-
-Final PDF Report
+- SOC Overview
+- Threat Level
+- MITRE ATT&CK Coverage
+- Investigation Status
+- Threat Intelligence
+- Timeline
+- Risk Assessment
+- Recommendations
+- Response Plan
+- Executive Report
 
 ---
 
-# Example Outputs
+# 📄 Generated Report
 
-The platform automatically generates:
+The platform automatically generates an executive incident report containing:
 
 - Executive Summary
-
-- Threat Intelligence Report
-
-- MITRE ATT&CK Mapping
-
-- Risk Assessment
-
-- Investigation Timeline
-
-- Response Plan
-
-- Containment Strategy
-
-- PDF Incident Report
-
----
-
-# Example Incident Types
-
-✔ Phishing
-
-✔ PowerShell Malware
-
-✔ Ransomware
-
-✔ Credential Theft
-
-✔ Command & Control
-
-✔ Suspicious Login Activity
-
-✔ USB Data Exfiltration
-
-✔ Brute Force Attacks
-
----
-
-# Screenshots
-
-Add screenshots here:
-
-- Dashboard
-- Investigation Workflow
+- Technical Findings
 - Threat Intelligence
+- MITRE ATT&CK Techniques
+- Investigation Timeline
 - Risk Assessment
-- Timeline
-- Final Report
+- Recommendations
+- Response Plan
+- Final Conclusion
+
+Reports can be exported as PDF.
 
 ---
 
-# Future Improvements
+# 🔐 Security Concepts Demonstrated
 
-- Live Threat Intelligence APIs
-- Real-time SIEM Integration
-- SOAR Automation
-- Azure Sentinel Integration
-- Splunk Integration
-- VirusTotal Integration
-- CrowdStrike Integration
-- Multi-user Authentication
-- Cloud Deployment
+- Multi-Agent Coordination
+- Threat Intelligence
+- Risk Analysis
+- Incident Response
+- MITRE ATT&CK Mapping
+- Cybersecurity Workflow Automation
+- Persistent Investigation Memory
+
+---
+## Screenshots
+<img width="958" height="503" alt="Screenshot 2026-07-06 004454" src="https://github.com/user-attachments/assets/84a646d1-49e3-4f16-9b4f-61af64a9b48c" />
+
+<img width="959" height="502" alt="Screenshot 2026-07-06 010241" src="https://github.com/user-attachments/assets/0a1f8c1d-b27b-4471-9bed-ea240ed1fd56" />
+
+<img width="959" height="468" alt="Screenshot 2026-07-06 010307" src="https://github.com/user-attachments/assets/4d8f39e1-fb11-4e02-800a-ae3b7f2877e8" />
+
+
 
 ---
 
-# Repository
+# 🎥 Demo Video
 
-GitHub
+Watch the complete project demonstration here:
+
+**YouTube:**
+https://youtu.be/7CZQ2ha5Ntk
+
+---
+
+# 💻 Repository
+
+GitHub Repository:
 
 https://github.com/aliasyeda/OrionOps-Multi-Agent-AI-Security-Operations-Center
 
 ---
 
-# Author
+# 📌 Future Improvements
+
+- Live SIEM Integration
+- Real-time Threat Feeds
+- MCP Tool Integration
+- LLM-powered Threat Hunting
+- Cloud Deployment
+- Multi-user Authentication
+- Advanced Memory Management
+
+---
+
+# 👨‍💻 Developed By
 
 **Syeda Alia Samia**
 
-AI • Machine Learning • Cybersecurity
+Google AI Agents Capstone Project (2026)
+
+---
+
+
