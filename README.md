@@ -1,6 +1,8 @@
 # 🛡️ OrionOps – Multi-Agent AI Security Operations Center (SOC)
 
-> An AI-powered Multi-Agent Security Operations Center (SOC) that automates cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using modern AI agent orchestration.
+
+
+> An AI-powered Multi-Agent Security Operations Center (SOC) featuring multi-agent orchestration for  automated cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using modern AI agent orchestration.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![React](https://img.shields.io/badge/React-Frontend-61dafb)
@@ -15,6 +17,8 @@
 
 OrionOps is a modern **AI-powered Security Operations Center (SOC)** designed to automate cyber incident investigations using a collaborative **multi-agent architecture**.
 
+In OrionOps multiple specialized AI agents coordinated through an agent orchestration workflow to investigate cybersecurity incidents from initial alert intake to executive report generation.
+
 Instead of relying on a single AI model, OrionOps coordinates specialized agents responsible for investigation, threat intelligence, timeline reconstruction, risk analysis, response planning, and executive reporting.
 
 The platform demonstrates how AI agents can work together to reduce analyst workload while improving investigation speed and consistency.
@@ -27,10 +31,11 @@ This project was developed as part of the **Google AI Agents: Intensive Vibe Cod
 
 This project demonstrates concepts explored during Google's AI Agents program, including:
 
-Multi-Agent AI Systems
+Multi-Agent Orchestration
+Specialised AI Agents
 Agent Orchestration
 Google Agent Development Kit (ADK) Architecture
-Modular AI Workflows
+Agent orchestration using the Google Agent Development Kit (ADK)
 Secure AI Design
 Enterprise Security Automation
 Human-in-the-loop Investigation
@@ -40,6 +45,11 @@ The repository includes:
 Production-style ADK backend showcasing a modular multi-agent architecture.
 
 Demo backend used for the interactive frontend demonstration and presentation.
+
+---
+# 🔄 Agent Orchestration
+
+OrionOps follows an orchestrated multi-agent architecture where a central Investigation Manager coordinates specialized AI agents. Each agent performs a dedicated task—incident intake, threat intelligence, timeline reconstruction, risk assessment, response planning, and report generation—before passing structured context to the next stage, creating an explainable and modular investigation workflow.
 
 ---
 
@@ -100,7 +110,7 @@ Executive PDF Report
 
 ---
 
-# 🤖 Multi-Agent Workflow
+# 🤖 Multi-Agent Orchestration Workflow
 
 | AI Agent | Responsibility |
 |----------|----------------|
@@ -140,7 +150,7 @@ This repository therefore contains both:
 ---
 
 # ✨ Features
-
+- Multi-agent orchestration
 - Multi-Agent Investigation Pipeline
 - AI-powered Threat Intelligence
 - MITRE ATT&CK Mapping
@@ -221,7 +231,7 @@ Reports are downloadable as PDF.
 ---
 
 # 🔐 Security Concepts Demonstrated
-
+- Multi-Agent Orchestration
 - Security Operations Center (SOC)
 - AI Agent Collaboration
 - Threat Intelligence
