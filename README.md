@@ -38,7 +38,9 @@ Human-in-the-loop Investigation
 The repository includes:
 
 Production-style ADK backend showcasing a modular multi-agent architecture.
+
 Demo backend used for the interactive frontend demonstration and presentation.
+
 ---
 
 # 🏗 System Architecture
