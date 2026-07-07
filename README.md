@@ -3,10 +3,8 @@
 > An AI-powered Multi-Agent Security Operations Center (SOC) that automates cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using modern AI agent orchestration.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![React](https://img.shields.io/badge/React-Frontend-61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6)
-![SQLite](https://img.shields.io/badge/SQLite-Memory-blue)
 ![Google ADK](https://img.shields.io/badge/Google-ADK-red)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-darkred)
 ![License](https://img.shields.io/badge/Status-Capstone-success)
@@ -25,28 +23,22 @@ This project was developed as part of the **Google AI Agents: Intensive Vibe Cod
 
 ---
 
-# 🎯 Capstone Highlights
+# 🏆 Google AI Agents Capstone
 
-This project demonstrates several concepts explored during the Google AI Agents program, including:
+This project demonstrates concepts explored during Google's AI Agents program, including:
 
-✅ Multi-Agent Architecture
+Multi-Agent AI Systems
+Agent Orchestration
+Google Agent Development Kit (ADK) Architecture
+Modular AI Workflows
+Secure AI Design
+Enterprise Security Automation
+Human-in-the-loop Investigation
 
-✅ Agent Coordination
+The repository includes:
 
-✅ Google ADK Project Structure
-
-✅ Persistent Memory (SQLite)
-
-✅ Threat Intelligence Automation
-
-✅ Risk Assessment
-
-✅ Incident Response Planning
-
-✅ Executive Report Generation
-
-✅ Modern React Dashboard
-
+Production-style ADK backend showcasing a modular multi-agent architecture.
+Demo backend used for the interactive frontend demonstration and presentation.
 ---
 
 # 🏗 System Architecture
@@ -121,22 +113,6 @@ Executive PDF Report
 
 ---
 
-# 🧠 Persistent Memory
-
-OrionOps includes a lightweight **SQLite-based memory layer** for maintaining investigation state.
-
-The memory stores:
-
-- Investigation context
-- Historical incidents
-- Case metadata
-- Agent workflow progress
-- Investigation state
-- Conversation context
-
-SQLite was selected because it provides lightweight local persistence without requiring an external database server, making it ideal for demonstrations and rapid development.
-
----
 
 # ⚙ Google ADK Integration
 
@@ -202,30 +178,7 @@ This repository therefore contains both:
 - Report Generation
 - Incident Response
 
----
 
-# 📂 Repository Structure
-
-```text
-OrionOps/
-│
-├── orionops-frontend/
-│      React + TypeScript Dashboard
-│
-├── OrionOps Backend/
-│      Google ADK Multi-Agent Backend
-│      Agents
-│      Memory
-│      SQLite
-│      Security Tools
-│
-├── Demo Backend/
-│      Lightweight Demonstration Backend
-│      Scenario Simulator
-│      Report Generator
-│
-└── README.md
-```
 
 ---
 
@@ -274,7 +227,7 @@ Reports are downloadable as PDF.
 - Risk Analysis
 - MITRE ATT&CK Mapping
 - Security Automation
-- Persistent Memory
+- Enterprise Security Operation
 - Cybersecurity Workflow Orchestration
 
 ---
@@ -307,20 +260,6 @@ https://kaggle.com/competitions/vibecoding-agents-capstone-project/writeups/orio
 
 https://github.com/aliasyeda/OrionOps-Multi-Agent-AI-Security-Operations-Center
 
----
-
-# 🚀 Future Improvements
-
-- Live SIEM Integration
-- MCP Server Integration
-- Real-time Threat Intelligence APIs
-- Cloud Deployment
-- Multi-user Authentication
-- Long-Term Agent Memory
-- RAG-powered Investigation
-- LLM Threat Hunting
-- Automated Playbooks
-- Enterprise SOC Integrations
 
 ---
 
