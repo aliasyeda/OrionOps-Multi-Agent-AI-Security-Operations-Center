@@ -49,7 +49,7 @@ Demo backend used for the interactive frontend demonstration and presentation.
 ---
 # 🔄 Agent Orchestration
 
-OrionOps follows an orchestrated multi-agent architecture where a central Investigation Manager coordinates specialized AI agents. Each agent performs a dedicated task—incident intake, threat intelligence, timeline reconstruction, risk assessment, response planning, and report generation—before passing structured context to the next stage, creating an explainable and modular investigation workflow.
+OrionOps follows an orchestrated multi-agent architecture where a central Investigation Manager coordinates specialized AI agents. Each agent performs a dedicated task incident intake, threat intelligence, timeline reconstruction, risk assessment, response planning, and report generation before passing structured context to the next stage, creating an explainable and modular investigation workflow.
 
 ---
 
