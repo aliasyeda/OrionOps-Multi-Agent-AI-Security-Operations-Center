@@ -1,6 +1,6 @@
 # 🛡️ OrionOps – Multi-Agent AI Security Operations Center (SOC)
 
-<img width="700" height="300" alt="Screenshot 2026-07-10 235251" src="https://github.com/user-attachments/assets/9ee29033-f45b-47ac-a995-7e7e80adce16" />
+<img width="900" height="400" alt="Screenshot 2026-07-10 235251" src="https://github.com/user-attachments/assets/9ee29033-f45b-47ac-a995-7e7e80adce16" />
 
 
 > An AI-powered Multi-Agent Security Operations Center (SOC) featuring multi-agent orchestration for  automated cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using modern AI agent orchestration.
