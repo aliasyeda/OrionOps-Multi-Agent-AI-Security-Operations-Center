@@ -1,6 +1,6 @@
 # 🛡️ OrionOps – Multi-Agent AI Security Operations Center (SOC)
 
-<img width="488" height="135" alt="Screenshot 2026-07-10 235251" src="https://github.com/user-attachments/assets/9ee29033-f45b-47ac-a995-7e7e80adce16" />
+<img width="700" height="300" alt="Screenshot 2026-07-10 235251" src="https://github.com/user-attachments/assets/9ee29033-f45b-47ac-a995-7e7e80adce16" />
 
 
 > An AI-powered Multi-Agent Security Operations Center (SOC) featuring multi-agent orchestration for  automated cyber incident investigation, threat intelligence analysis, risk assessment, response planning, and executive report generation using modern AI agent orchestration.
@@ -247,9 +247,9 @@ Reports are downloadable as PDF.
 
 # 📸 Screenshots
 
-<img width="958" height="503" alt="Screenshot 2026-07-06 004454" src="https://github.com/user-attachments/assets/84a646d1-49e3-4f16-9b4f-61af64a9b48c" />
+<img width="958" height="469" alt="Screenshot 2026-07-06 004454" src="https://github.com/user-attachments/assets/84a646d1-49e3-4f16-9b4f-61af64a9b48c" />
 
-<img width="959" height="502" alt="Screenshot 2026-07-06 010241" src="https://github.com/user-attachments/assets/0a1f8c1d-b27b-4471-9bed-ea240ed1fd56" />
+<img width="959" height="469" alt="Screenshot 2026-07-06 010241" src="https://github.com/user-attachments/assets/0a1f8c1d-b27b-4471-9bed-ea240ed1fd56" />
 
 <img width="959" height="468" alt="Screenshot 2026-07-06 010307" src="https://github.com/user-attachments/assets/4d8f39e1-fb11-4e02-800a-ae3b7f2877e8" />
 
